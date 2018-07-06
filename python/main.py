@@ -37,6 +37,8 @@ class MainPage(BaseHandler):
             pata += word1[len(word2):]
 
         self.response.write(word1 +u' + ' + word2 + u' =  ' + pata) #結果表示
+        
+        self.response.write(u'<br>もう一度、好きな言葉を2つ入力してください！') #「もう一度、好きな言葉を2つ入力してください」と表示
 
         self.render('main.html')
 
